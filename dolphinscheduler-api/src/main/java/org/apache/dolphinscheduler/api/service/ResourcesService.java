@@ -229,6 +229,14 @@ public interface ResourcesService {
     Resource queryResourcesFileInfo(String userName, String fullName);
 
     /**
+     * delete DATA_TRANSFER data in resporce
+     *
+     * @param loginUser user who query resource
+     * @param days number of days
+     */
+    Map<String, Object> deleteDataTransferData(User loginUser, Integer days);
+
+    /**
      * unauthorized file
      *
      * @param loginUser login user
